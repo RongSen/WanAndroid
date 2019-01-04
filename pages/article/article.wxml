@@ -1,0 +1,31 @@
+<wxs module="dateUtil" src="../wxs/timeUtils.wxs"></wxs>
+
+<view>
+  <!-- 轮播图 -->
+  <swiper catchtap='onSwiperTap' vertical='{{false}}' indicator-dots='true' autoplay='true'>
+    <block wx:for='{{bannerList}}' wx:for-item='item'>
+      <swiper-item>
+        <image src='{{item.imagePath}}' data-post-id='{{item.id}}' data-post-url='{{item.url}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <block wx:for='{{articleList.list}}' wx:for-item='item'>
+    <view class='post-container'>
+      <view class='post-author-tag'>
+        <view class='post-author'>
+          <image class='post-author-image' src='/res/ic_launcher_round.png'></image>
+          <text class='post-author-name'>{{item.author}}</text>
+        </view>
+        <view class='post-tag'>{{item.superChapterName}}</view>
+      </view>
+      <view class='post-title' catch:tap='onArticleTap' data-article-url='{{item.link}}' data-article-title='{{item.title}}'>{{item.title}}</view>
+      <view class='post-collect-time'>
+        <image class='post-collect-time-image' src='/res/none-star.png'></image>
+        <text class='post-collect-time-font'>16</text>
+        <image class='post-collect-time-image' src='/res/view.png'></image>
+        <text class='post-collect-time-font'>{{dateUtil.dateFormat(item.publishTime, 'yyyy-MM-dd')}}</text>
+      </view>
+    </view>
+  </block>
+</view>

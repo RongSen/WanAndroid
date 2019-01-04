@@ -1,0 +1,80 @@
+/* pages/main/main.wxss */
+swiper {
+  width: 100%;
+  height: 400rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  border: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+
+/* 顶部 作者、标签 */
+.post-author-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式*/
+  align-items: center;            /* 对齐交叉轴上的各项（垂直） */
+  margin: 10rpx 0 20rpx 10rpx;
+  font-size: 26rpx;
+}
+
+.post-author {
+}
+
+.post-author-image {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+
+.post-author-name {
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.post-tag {
+  margin-right: 20rpx;
+  vertical-align: middle;
+  color: #405f80;
+}
+
+/* 中间 标题 */
+.post-title {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  letter-spacing: 2rpx;
+  line-height: 40rpx;
+}
+
+/* 底部 收藏、发布时间 */
+.post-collect-time {
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx 0 20rpx 10rpx;
+  font-size: 26rpx;
+}
+
+.post-collect-time-image {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.post-collect-time-font {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+

@@ -84,6 +84,10 @@ Page({
     })
   },
 
+  onCollectTap: function(event){
+    console.log(event);
+  },
+
   getBannerList: function(){
     var $this = this;
     wx.request({

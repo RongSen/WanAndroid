@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/knowledge/knowledge",
     "pages/article/article",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/knowledge/knowledge",
     "pages/article/article-detail/article-detail"
   ],
   "window": {

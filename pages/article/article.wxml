@@ -21,10 +21,8 @@
       </view>
       <view class='post-title' catch:tap='onArticleTap' data-article-url='{{item.link}}' data-article-title='{{item.title}}'>{{item.title}}</view>
       <view class='post-collect-time'>
-        <image class='post-collect-time-image' src='/res/none-star.png'></image>
-        <text class='post-collect-time-font'>16</text>
-        <image class='post-collect-time-image' src='/res/view.png'></image>
-        <text class='post-collect-time-font'>{{dateUtil.dateFormat(item.publishTime, 'yyyy-MM-dd')}}</text>
+        <view class='post-collect-time-font' catch:tap='onCollectTap'><i class="fa fa-heart-o" aria-hidden="true"></i> 16</view>
+        <view class='post-collect-time-font'><i class='fa fa-clock-o' aria-hidden='true'></i> {{dateUtil.dateFormat(item.publishTime, 'yyyy-MM-dd')}}</view>
       </view>
     </view>
   </block>

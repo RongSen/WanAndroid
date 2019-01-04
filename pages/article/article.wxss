@@ -1,7 +1,8 @@
 /* pages/main/main.wxss */
 swiper {
-  width: 100%;
+  width: 95%;
   height: 400rpx;
+  margin: 20rpx;
 }
 
 swiper image {
@@ -12,10 +13,9 @@ swiper image {
 .post-container {
   display: flex;
   flex-direction: column;
-  margin-top: 20rpx;
-  margin-bottom: 40rpx;
+  margin: 20rpx 20rpx 40rpx 20rpx;
   border: 1px solid #ededed;
-  padding-bottom: 5px;
+  padding: 10px;
 }
 
 /* 顶部 作者、标签 */
@@ -24,7 +24,6 @@ swiper image {
   flex-direction: row;
   justify-content: space-between; /*用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式*/
   align-items: center;            /* 对齐交叉轴上的各项（垂直） */
-  margin: 10rpx 0 20rpx 10rpx;
   font-size: 26rpx;
 }
 
@@ -32,18 +31,17 @@ swiper image {
 }
 
 .post-author-image {
-  width: 60rpx;
-  height: 60rpx;
+  width: 50rpx;
+  height: 50rpx;
   vertical-align: middle;
 }
 
 .post-author-name {
-  margin-left: 20rpx;
+  margin-left: 10rpx;
   vertical-align: middle;
 }
 
 .post-tag {
-  margin-right: 20rpx;
   vertical-align: middle;
   color: #405f80;
 }
@@ -52,8 +50,7 @@ swiper image {
 .post-title {
   font-size: 28rpx;
   color: #666;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 20rpx 0 20rpx 0;
   letter-spacing: 2rpx;
   line-height: 40rpx;
 }
@@ -62,19 +59,11 @@ swiper image {
 .post-collect-time {
   display: flex;
   flex-direction: row;
-  margin: 10rpx 0 20rpx 10rpx;
   font-size: 26rpx;
 }
 
-.post-collect-time-image {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
 .post-collect-time-font {
-  margin-right: 8px;
+  margin-right: 15rpx;
   vertical-align: middle;
 }
 

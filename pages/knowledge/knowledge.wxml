@@ -1,2 +1,15 @@
-<!--pages/knowledge/knowledge.wxml-->
-<text>pages/knowledge/knowledge.wxml</text>
+<view>
+  <block wx:for='{{chapterList}}' wx:for-item='item'>
+    <view class='chapter-container'>
+      <view class='chapter'>
+        <view class='chapter-content'>
+          <view class='chapter-name'>{{item.name}}</view>
+          <view class='chapter-children-name'>{{item.childrensName}}</view>
+        </view>
+        <view class='chapter-children'>
+          <i class='fa fa-angle-right fa-2x'></i>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

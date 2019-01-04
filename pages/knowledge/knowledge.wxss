@@ -1,1 +1,37 @@
 /* pages/knowledge/knowledge.wxss */
+.chapter-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+}
+
+.chapter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+
+  color: #666;
+
+  border: 1px solid #ededed;
+  padding: 20rpx;
+}
+
+.chapter-content {
+  padding-right: 10rpx;
+  max-width: 90%;
+}
+
+.chapter-name {
+  margin: 10rpx auto 10rpx auto;
+  font-size: 16px;
+}
+
+.chapter-children-name {
+  font-size: 12px;
+}
+
+.chapter-children {
+  
+}
